@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "JUAREZ_DB", "JUAREZ_DB\JUAREZ_DB.ssmssqlproj", "{E735F371-31EB-4ABA-A218-00DAC95EF3A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E735F371-31EB-4ABA-A218-00DAC95EF3A8}.Default|Default.ActiveCfg = Default
+		{F1857B8C-4B22-441D-B407-6BA485AFB8C9}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E1BC555-0123-4049-A662-4DC23CE189F9}
+	EndGlobalSection
+EndGlobal
