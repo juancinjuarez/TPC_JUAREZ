@@ -14,7 +14,7 @@ namespace TPC_Juarez.Dominio
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection("data source = T480S-JMJ; initial catalog = JUAREZ_DB; integrated security = sspi");
+            conexion = new SqlConnection("data source = T480S-JMJ\\SQLEXPRESS; initial catalog = JUAREZ_DB; integrated security = sspi");
             comando = new SqlCommand();
             comando.Connection = conexion;
         }

@@ -13,7 +13,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-     <div class="bg-primary #3b6978"
+        <div class="bg-primary #3b6978">
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-4">
@@ -32,6 +33,23 @@
             </div>
             <div class="row">
                 <div class="col-4">
+                    <div class="card-row" style="width: 20rem;">
+                        <asp:Repeater runat="server" ID="productosRepeater">
+                            <ItemTemplate>
+                                <div class="card">
+                                    <img src="<%#Eval("ImagenURL") %>" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><%#Eval("Nombre")%></h5>
+                                        <p class="card-text"><%#Eval("Descripcion")%></p>
+                                        <p class="card-text">STOCK: <%#Eval("Stock")%></p>
+                                        <p class="card-text">PRECIO: $<%#Eval("PrecioVenta")%></p>
+                                    </div>
+                                    <%--<asp:Button ID="btnAgregarArticulo" CssClass="btn btn-primary" Text="Agregar al carrito" CommandArgument='<%#Eval("CodProducto") %>' CommandName="articuloSeleccionado" runat="server"/>--%>
+                                </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
+<%--                        <asp:Button ID="btnComprar" CssClass="btn btn-primary" Text="Finalizar compra" runat="server" OnClick="btnComprar_Click" />--%>
+                    </div>
                 </div>
             </div>
             <div class="row">

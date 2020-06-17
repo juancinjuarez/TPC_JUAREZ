@@ -10,11 +10,13 @@ namespace TPC_Juarez.Dominio
     {
         public int CodProducto { get; set; }
         public int Stock { get; set; }
-        public float Precio { get; set; }
+        public float PrecioCompra { get; set; }
+        public double PrecioVenta { get; set; }
         public string Descripcion { get; set; }
         public string Nombre { get; set; }
         public bool Estado { get; set; }
-        public string URLImagen { get; set; }
+        public string ImagenURL { get; set; }
+        
         public Proveedor IdProveedor { get; set; }
         public Marca IdMarca { get; set; }
     }
