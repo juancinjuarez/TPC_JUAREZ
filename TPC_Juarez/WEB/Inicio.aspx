@@ -25,11 +25,11 @@
             <a class="dropdown-item" href="RegistroVendedor.aspx">Registrarse como vendedor</a>
         </div>
         <asp:Button type="button" CssClass="btn btn-primary" Text="Ingreso Cliente" CommandName="IngresoC" CommandArgument="cliente" runat="server" OnClick="Cliente_Click" />
-        <asp:Button type="button" CssClass="btn btn-primary" Text="Ingreso Usuario" CommandName="IngresoU" CommandArgument="cliente" runat="server" />
-        <asp:Button type="button" CssClass="btn btn-primary" Text="Ingreso Proveedor" CommandName="IngresoP" CommandArgument="cliente" runat="server" />
+        <asp:Button type="button" CssClass="btn btn-primary" Text="Ingreso Vendedor" CommandName="IngresoV" CommandArgument="cliente" runat="server" OnClick="Vendedor_Click"/>
+        <asp:Button type="button" CssClass="btn btn-primary" Text="Ingreso Proveedor" CommandName="IngresoP" CommandArgument="cliente" runat="server" OnClick="Proveedor_Click"/>
         <div class="container">
             <div class="card-row" style="width: 20rem;">
-                <asp:Repeater runat="server" ID="productosRepeater">
+                <asp:Repeater runat="server" ID="productosRepeater" OnItemCommand="productosRepeater_ItemCommand">
                     <ItemTemplate>
                         <div class="card">
                             <img src="<%#Eval("ImagenURL") %>" class="card-img-top">
@@ -39,7 +39,7 @@
                                 <p class="card-text">STOCK: <%#Eval("Stock")%></p>
                                 <p class="card-text">PRECIO: $<%#Eval("PrecioVenta")%></p>
                             </div>
-                            <asp:Button type="button" CssClass="btn btn-primary" Text="AGREGAR AL CARRITO" CommandName="agregar" CommandArgument="agregarAlCarrito" runat="server" />
+                            <asp:Button type="button" CssClass="btn btn-primary" Text="AGREGAR AL CARRITO" CommandName="agregar" CommandArgument="agregarAlCarrito" runat="server" OnClick="Agregar_Click"/>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>

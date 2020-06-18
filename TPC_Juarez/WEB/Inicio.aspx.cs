@@ -27,16 +27,26 @@ namespace TPC_Juarez
 
         protected void Cliente_Click(object sender, EventArgs e)
         {
-            Response.Redirect("HomeCliente.aspx");
+            Response.Redirect("IngresoCliente.aspx");
         }
-        protected void Usuario_Click(object sender, EventArgs e)
+        protected void Vendedor_Click(object sender, EventArgs e)
         {
-            Response.Redirect("HomeUsuario.aspx");
+            Response.Redirect("IngresoVendedor.aspx");
         }
         protected void Proveedor_Click(object sender, EventArgs e)
         {
-            Response.Redirect("HomeProveedor.aspx");
+            Response.Redirect("IngresoProveedor.aspx");
         }
+        protected void Agregar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("IngresoCliente.aspx");
+        }
+
+        protected void productosRepeater_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
+        }
+
     }
 }
 
